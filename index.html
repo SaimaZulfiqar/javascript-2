@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <linkrel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />  
+    <title>E-Commerce page</title>
+  </head>
+  <body>
+     <!--Header -->
+    <header>
+      <div class="header"></div>
+      <div class="logo">
+        <img
+          src="images/småkager logo.png"
+          height="100"
+          width="100"
+          alt="Logo"/>
+      </div>
+      <div>
+        <h1>Småkagerkøbenhavn</h1>
+      </div>
+      <nav>
+            <a><i class="fa-solid fa-house"></i></a>
+            <a><i class="fa-solid fa-address-book"></i></a>
+            <a><i class="fa-solid fa-shop"></i></a>
+            <a><i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+      <nav class="nav-links" id="navLinks">
+        <a href="#">Home</a>
+        <a href="#">Cookies</a>
+        <a href="#">Order</a>
+        <a href="#">Contact</a>
+      </nav>
+
+
+
+
+
+
+      <!--<div class="menu-icon" id="menuIcon">
+            <i class="fas fa-bars"></i>
+        </div> -->
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Småkagerkøbenhavn</h1>
+        <p>
+          Småkager København is a Danish bakery offering handcrafted, premium
+          cookies inspired by traditional recipes and quality ingredients.
+        </p>
+        <a href="#services" class="cta-button">Shop cookies</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/image5.jpeg" alt="Main Hero Image" />
+      </div>
+    </section> 
+
+  <!--<div>
+
+    <h1>Product List</h1>
+    <label for="sort">Sort by:</label>
+    <select id="sort" onchange="sortProducts()">
+        <option value="priceAsc">Price: Low to High</option>
+        <option value="priceDesc">Price: High to Low</option>
+        <option value="nameAsc">Name: A-Z</option>
+        <option value="nameDesc">Name: Z-A</option>
+  </div>-->
+
+  <label for="sort">Sort by:</label>
+  <select id="sort" onchange="sortProducts()">
+      <option value="priceAsc">Price: High to Low</option>
+      <option value="priceDesc">Price: Low to High</option>
+      <option value="nameAsc">Name: A-Z</option>
+      <option value="nameDesc">Name: Z-A</option>
+  </select>
+
+
+
+
+
+
+
+    <!-- Main Product Section -->
+    <div class="product-container">
+      <!-- <div class="product-image">
+            <img src="images/image0.jpeg" class="cookies-image" alt="Product Image">
+            
+            <h2 class="product-name">Chocolate Chip Cookies</h2>
+            <p class="product-price">30kr</p>
+            <p class="product-description">
+                Chocolate chip cookies are classic, buttery treats with crisp edges and soft centers, loaded with melty chocolate chips in every bite.
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-image">
+            <img src="images/image1.jpeg" class="cookies-image"  alt="Product Image">
+            <h2 class="product-name">Red velvet Cookies</h2>
+            <p class="product-price">30kr</p>
+            <p class="product-description">
+                Red velvet filled cookies are soft, cocoa-flavored treats with a rich red color and a creamy, sweet filling inside.
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        
+        </div>
+        <div class="product-image">
+            <img src="images/image2.jpeg"  class="cookies-image" alt="Product Image">
+            
+            <h2 class="product-name">Biscoffe Cookies</h2>
+            <p class="product-price">30kr</p>
+            <p class="product-description">
+                Biscoff-filled cookies are soft, spiced treats with a creamy, sweet Biscoff spread center, offering a rich caramelized flavor in every bite.
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        <div class="product-image">
+            <img src="images/image5.jpeg" class="cookies-image" alt="Product Image">
+            
+            <h2 class="product-name">Multiple Cookies</h2>
+            <p class="product-price">80kr</p>
+            <p class="product-description">
+                Multiple cookies feature a mix of classic flavors like chocolate chip, 
+                double chocolate and red velvet offering a delicious treat for every taste.
+            </p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+        
+         -->
+    </div>
+    <!-- Footer Links -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>We are passionate home-baker.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: info@example.com</p>
+          <p>Phone: +45-1237890</p>
+        </div>
+        <!-- social media links Links -->
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <a href="">Facebook</a> | <a href="#">Instagram</a> |
+          <a href="#">Tiktok</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Example Company. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
